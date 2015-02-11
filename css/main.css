@@ -1,0 +1,93 @@
+body {
+  background: #F9F9F9;
+  font-family: "Seravek", Arial, sans-serif;
+}
+#nav-bar {
+  background: #242424;
+  position: fixed;
+  left: 0;
+  top:0;
+  bottom: 0;
+  width: 100px;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17); 
+  z-index: 99;
+}
+#nav-bar .nav-icons {
+  padding: 0;
+  margin: 0;
+  width: 100;
+  list-style: none;
+}
+#nav-bar .nav-icons li a {
+  display: block;
+  padding: 35px;
+}
+#nav-bar .nav-icons li:hover {
+  background: #666;
+}
+#nav-bar .nav-icons li .tooltip .tooltip-inner {
+  white-space: nowrap;
+  padding: 15px 20px;
+  font-family: "Seravek", Arial, sans-serif;
+  border-radius: 2px;
+}
+#nav-bar .nav-icons li.active {
+  background: #00aeef;
+}
+#main-application-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100px;
+  overflow-x: scroll;
+}
+#note-container {
+  width: 70%;
+  background: #FFF;
+  border: solid 1px #DEDEDE;
+  margin: 100px auto;
+  box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.07);
+}
+#note-container .title {
+  padding: 35px;
+  font-size: 16px;
+  color: #006699;
+  font-weight: 700;
+}
+#note-container .note-area {
+  padding: 10px 35px 35px 35px;
+  font-size: 20px;
+  font-weight: 100;
+}
+#note-container .title:focus {
+  outline: none;
+}
+#note-container .note-area:focus {
+  outline: none;
+  outline: solid 1px #ff7200;
+  outline-top: none;
+}
+.app-menu {
+  position: fixed;
+  left: 100px;
+  right:0;
+  padding: 15px 45px;
+  color: #767676;
+  font-size: 0.9em;
+  transition:.4s all;
+  opacity: 0.3;
+}
+.app-menu:hover {
+  transition:.4s all;
+  opacity: 1;
+}
+.app-menu.fixed {
+  background: #FFF;
+  border-bottom: 1px #DEDEDE solid;
+  box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.07);
+  transition:.4s all;
+}
+.btn {
+  border-radius: 2px;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "AndelaNotes",
+  "version": "0.0.0",
+  "authors": [
+    "Chidiebere Nnadi <chidiebere.nnadi@gmail.com>"
+  ],
+  "description": "Sample Application for UI Training",
+  "main": "index.html",
+  "keywords": [
+    "UI",
+    "Training",
+    "Sample",
+    "AndelaNote"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}

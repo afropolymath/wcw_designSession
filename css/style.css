@@ -1,0 +1,39 @@
+#nav-bar {
+  position:fixed;
+  width: 100px;
+  top:0;
+  left:0;
+  bottom:0;
+  background: #232323;
+}
+#nav-bar ul {
+  margin:0; padding:0;
+  list-style: none;
+}
+#nav-bar ul li a {
+  display: block;
+  padding: 25px;
+}
+#nav-bar li.active {
+  background: slategrey;
+}
+#app {
+  position: absolute;
+  background: #CCC;
+  left: 100px;
+  top:0;
+  right:0;
+  bottom:0;
+}
+#app .tools {
+  position: fixed;
+  left: 100px;
+  top: 0;
+  right: 0;
+  background: #FFF;
+  padding: 20px;
+}
+#app .notes-area {
+  margin: 100px 35px; 
+  background: #FFF;
+}
