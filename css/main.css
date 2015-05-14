@@ -6,18 +6,29 @@ body {
   background: #242424;
   position: fixed;
   left: 0;
+  right: 0;
   top:0;
-  bottom: 0;
-  width: 100px;
+  height: 100px;
   box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17); 
   z-index: 99;
 }
+#nav-bar .logo {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
 #nav-bar .nav-icons {
+  display: inline-block;
+  list-style: none;
   padding: 0;
   margin: 0;
-  width: 100;
-  list-style: none;
+  height: 100px;
 }
+#nav-bar .nav-icons li {
+  float:left;
+  width: 100px;
+}
+
 #nav-bar .nav-icons li a {
   display: block;
   padding: 35px;
@@ -36,53 +47,86 @@ body {
 }
 #main-application-area {
   position: absolute;
-  top: 0;
+  top: 100px;
   right: 0;
   bottom: 0;
-  left: 100px;
+  left: 0;
   overflow-x: scroll;
 }
-#note-container {
-  width: 70%;
+
+#notes-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  overflow-y: scroll;
+  border-right: solid 1px #dedede;
+}
+
+#notes-list .notes {
+  list-style: none;
+  padding: 20px;
+}
+
+#notes-list .notes li {
   background: #FFF;
-  border: solid 1px #DEDEDE;
-  margin: 100px auto;
-  box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.07);
+  display: block;
+  height: 200px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
 }
-#note-container .title {
-  padding: 35px;
-  font-size: 16px;
-  color: #006699;
-  font-weight: 700;
+
+#note-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 200px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
 }
-#note-container .note-area {
-  padding: 10px 35px 35px 35px;
-  font-size: 20px;
-  font-weight: 100;
+
+.note-unit {
+  overflow-x: scroll;
 }
-#note-container .title:focus {
-  outline: none;
-}
-#note-container .note-area:focus {
-  outline: none;
-  outline: solid 1px #ff7200;
-  outline-top: none;
-}
-.app-menu {
-  position: fixed;
-  left: 100px;
-  right:0;
+
+.options{
   padding: 15px 45px;
   color: #767676;
   font-size: 0.9em;
   transition:.4s all;
   opacity: 0.3;
 }
-.app-menu:hover {
+
+.note {
+  position: relative;
+  background: #FFF;
+}
+.note .title {
+  padding: 35px;
+  font-size: 16px;
+  color: #006699;
+  font-weight: 700;
+}
+.note .note-area {
+  padding: 10px 35px 35px 35px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.note .title:focus {
+  outline: none;
+}
+.note .note-area:focus {
+  outline: none;
+  outline: solid 1px #ff7200;
+  outline-top: none;
+}
+.options:hover {
   transition:.4s all;
   opacity: 1;
 }
-.app-menu.fixed {
+.options.fixed {
   background: #FFF;
   border-bottom: 1px #DEDEDE solid;
   box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.07);
